@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../Styles/doge.css" 
+    <title>My Website</title>
+  </head>
+  <body>
+  <form class="form" onsubmit="return check(this)" method="post"> <!-- when the submit button is pressed it does the error handling -->
+    <div class="topnav">
+      <a href="Home.html" target="_top">Home</a>&ensp;
+      <a href="Skills.html" target="_top">Skills</a>&ensp;
+      <a href="Projects.html" target="_top">Projects</a>&ensp;
+      <a href="Gallery.html" target="_top">Gallery</a>&ensp;
+      <a href="Contacts.html" target="_top">Contacts</a>&ensp;
+      <a href="Extra.html" target="_top">Extra</a>&ensp;
+    </div>
+
+    <h1>You interested in getting in contact?</h1>
+<section>
+  <article>
+    <p>Heres the information that you need to know</p>
+    <p>talking.dog@bing.com</p>
+    <p>+728 4829 2818 3245 2131 7482</p><br><br><br>
+
+
+<p>You can leave me your info here</p>
+    <tr>
+     <td>Firstname:</td>
+     <td><input type="text" name="fname" placeholder="John" value=""></td>
+   </tr><br><br>
+
+   <tr>
+    <td>Lastname:</td>
+    <td><input type="text" name="lname" placeholder="Doe"  value=""></td>
+  </tr><br><br>
+
+  <tr>
+   <td>Gender:</td>
+   <select id = "gender">
+     <option value="0">Choose</option>
+     <option value="1">Female</option>
+     <option value="2">Male</option>
+     <option value="3">Other</option>
+   </select>
+  </tr><br><br>
+
+  <tr>
+   <td>Age:</td>
+   <td><input type="text" name="age" id="age" placeholder="18-100" value=""></td>
+  </tr><br><br>
+
+ <tr>
+  <td>Email :</td>
+  <td><input type="text" name="email" placeholder="john.doe@nice.com" value=""></td>
+ </tr><br><br>
+
+ <tr>
+  <td>Tell me more about yourself (optional)</td><br>
+ <td colspan="2"><textarea name="info" rows="8" cols="53"></textarea></td>
+</tr><br><br>
+
+<input type="submit" value="Send">
+<input type=button onclick="window.location.reload()" value="Clear"> <!-- basically a reset function to clear information -->
+
+  </article>
+</section>
+</form>
+<script src="../JS/Contacts/Info.js"></script>
+</body>
+</html>

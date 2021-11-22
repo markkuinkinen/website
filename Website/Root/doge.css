@@ -1,0 +1,75 @@
+body {
+  background-image: url(../Images/wall.jpg);    /*added cool background to make pages look neat*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1  {
+  color: white;         /*made some adjustments to make words readable, all h1 the same*/
+  text-align: center;
+}
+
+p {
+  color: white;         /*makes all <p> the same*/
+  font-size: 120%
+}
+
+iframe {
+  display: block;       /*centered the video in extras*/
+  margin: 0 auto;
+  border-style:none;
+}
+
+.topnav {						/*bar which holds the button */
+  overflow: hidden;          /*created navbnar to add home, contacts, extra, etc...*/
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;      /*aligns boxes and makes a certain size*/
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;     /*this is how it transitions when you hover over it*/
+  color: black;
+}
+
+.profile img {
+  border-radius: 50%;       /*some adjustments to the picture on home page to be circular, bordered, and centred */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 15px;
+  border-color: black;
+}
+
+.gallery img {
+  display: block;     /*polished the gallery photo set up by centreing and standardising the size*/
+  width: auto;
+  float: left;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+section {
+  text-align:left;          /*making the page fit the screen*/
+  display: -webkit-flex;
+  display: flex;
+}
+
+article {
+  margin: auto;
+  padding: 30px;        /*tidying up specific text boxes to align*/
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background: rgba(47, 79, 79, 0.6);
+  height: auto;
+}

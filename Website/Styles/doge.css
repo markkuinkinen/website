@@ -1,0 +1,127 @@
+body {
+  background-image: url(../Images/wall.jpg);    /*added cool background to make pages look neat*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+h1  {
+  color: white;         /*made some adjustments to make words readable*/
+  text-align: center;
+}
+
+p {
+  color: white;         /*same here as in h1*/
+  font-size: 120%
+}
+
+iframe {
+  display: block;       /*centered the video in extras*/
+  margin: 0 auto;
+  border-style:none;
+}
+
+.topnav {
+  overflow: hidden;          /*created navbnar to make it look more professional*/
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;      /*this is how it looks normally*/
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;     /*and this is how it transitions when you hover over it*/
+  color: black;
+}
+
+.profile img {
+  border-radius: 50%;       /*some adjustments on the picture on home page*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 15px;
+  border-color: black;
+}
+
+.gallery img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  position: relative;
+}
+
+.caption {
+  text-align: center;
+  font-size: 150%;
+}
+
+section {
+  text-align:left;          /*made base for the text and made it to flex with the size of the screen*/
+  display: -webkit-flex;
+  display: flex;
+}
+
+article {
+  margin: auto;
+  padding: 30px;        /*more tidy up with section*/
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background: rgba(47, 79, 79, 0.6);
+  height: auto;
+}
+
+.clock{
+  position: absolute;
+  font-size: 200%;
+  margin-left: 10%;
+  margin-top: 13%
+}
+
+.date{
+  position: absolute;
+  font-size: 200%;
+  margin-left:73%;
+  margin-top: 13%
+}
